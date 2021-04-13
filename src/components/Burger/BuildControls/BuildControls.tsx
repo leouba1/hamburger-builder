@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import classes from "./BuildControls.module.css";
 import BuildControl from "./BuildControl/BuildControl";
 
-interface BuildControlsProps {
+type BuildControlsProps = {
   ingredientAdded: (ingredient: string) => void;
   ingredientRemove: (ingredient: string) => void;
   order: () => void;

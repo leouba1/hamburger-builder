@@ -1,4 +1,4 @@
-import React, { FC, ReactElement, ReactNode } from "react";
+import React from "react";
 import classes from "./Backdrop.module.css";
 
 type Props = {

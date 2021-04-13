@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import classes from "./Burger.module.css";
 import BurgerIngredient from "./BurgerIngredients/BurgerIngredient";
 
-interface BurgerProps {
+type BurgerProps = {
   ingredients: object;
 }
 

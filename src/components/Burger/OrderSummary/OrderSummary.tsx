@@ -1,13 +1,13 @@
-import React, { FC, Fragment } from "react";
-import Ingredients from "../../../models/Ingredients";
+import { FC, Fragment } from "react";
+import { Ingredients } from "../../../models/Ingredients";
 import Button from "../../UI/Button/Button";
 
-interface Props {
+type Props = {
   purchaseCanceled: () => void;
   purchaseConfirmed: () => void;
   ingredients: Ingredients;
-  totalPrice: number
-}
+  totalPrice: number;
+};
 
 const OrderSummary: FC<Props> = ({
   ingredients,
@@ -29,7 +29,9 @@ const OrderSummary: FC<Props> = ({
       <h3>Your Order</h3>
       <p>A delicious burger with the following ingredients:</p>
       <ul>{ingredientSummary}</ul>
-      <p><strong>Total Price: {totalPrice.toFixed(2)}</strong></p>
+      <p>
+        <strong>Total Price: {totalPrice.toFixed(2)}</strong>
+      </p>
       <p>Continue to checkout</p>
       <Button btnType="Danger" clicked={purchaseCanceled}>
         CANCEL

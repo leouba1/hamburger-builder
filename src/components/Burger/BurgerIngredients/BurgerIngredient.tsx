@@ -1,11 +1,11 @@
 import React, {FC} from "react";
 import classes from "./BurgerIngredient.module.css";
 
-interface BurgerIngredientProps {
+type Props = {
   type: string;
 }
 
-const BurgerIngredient: FC<BurgerIngredientProps> = ({ type }) => {
+const BurgerIngredient: FC<Props> = ({ type }) => {
   let ingredients = null;
 
   switch (type) {

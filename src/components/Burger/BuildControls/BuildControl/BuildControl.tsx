@@ -1,11 +1,11 @@
 import React, { FC } from "react";
 import classes from "./BuildControl.module.css";
 
-interface BuildControlProps {
+type BuildControlProps = {
   label: string;
+  disabled: boolean;
   added: () => void;
   remove: () => void;
-  disabled: boolean;
 }
 
 const BuildControl: FC<BuildControlProps> = ({ label, added, remove, disabled }) => {

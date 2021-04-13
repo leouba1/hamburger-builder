@@ -4,14 +4,7 @@ import BuildControls from "../../components/Burger/BuildControls/BuildControls";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 
-import Ingredients from "../../models/Ingredients";
-
-const IngredientPrices = [
-  { key: "salad", value: 0.3 },
-  { key: "bacon", value: 0.4 },
-  { key: "cheese", value: 0.4 },
-  { key: "meat", value: 0.5 },
-];
+import {Ingredients, IngredientPrices} from "../../models/Ingredients";
 
 const initialPrice = 4;
 
